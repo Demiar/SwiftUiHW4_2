@@ -11,8 +11,8 @@
 		8A65037826BFC75E00059F9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A65037726BFC75E00059F9B /* Assets.xcassets */; };
 		8A65037B26BFC75E00059F9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A65037A26BFC75E00059F9B /* Preview Assets.xcassets */; };
 		8A65038326BFC76D00059F9B /* SliderCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A65038226BFC76D00059F9B /* SliderCustom.swift */; };
-		8A65038526BFC77200059F9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A65038426BFC77200059F9B /* ContentView.swift */; };
 		8A65038726BFC78500059F9B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A65038626BFC78500059F9B /* Coordinator.swift */; };
+		8A65038D26BFC89800059F9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A65038B26BFC81C00059F9B /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +22,8 @@
 		8A65037A26BFC75E00059F9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8A65037C26BFC75E00059F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A65038226BFC76D00059F9B /* SliderCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderCustom.swift; sourceTree = "<group>"; };
-		8A65038426BFC77200059F9B /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../SwiftUIHW4/SwiftUIHW4/ContentView.swift; sourceTree = "<group>"; };
 		8A65038626BFC78500059F9B /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8A65038B26BFC81C00059F9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +56,9 @@
 		8A65037226BFC75900059F9B /* SwiftUiHW4_2 */ = {
 			isa = PBXGroup;
 			children = (
-				8A65038426BFC77200059F9B /* ContentView.swift */,
-				8A65038226BFC76D00059F9B /* SliderCustom.swift */,
-				8A65037326BFC75900059F9B /* SwiftUiHW4_2App.swift */,
 				8A65038626BFC78500059F9B /* Coordinator.swift */,
-				8A65037726BFC75E00059F9B /* Assets.xcassets */,
-				8A65037C26BFC75E00059F9B /* Info.plist */,
-				8A65037926BFC75E00059F9B /* Preview Content */,
+				8A65038C26BFC82800059F9B /* SupportFiles */,
+				8A65038826BFC7E700059F9B /* View */,
 			);
 			path = SwiftUiHW4_2;
 			sourceTree = "<group>";
@@ -73,6 +69,26 @@
 				8A65037A26BFC75E00059F9B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8A65038826BFC7E700059F9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A65038B26BFC81C00059F9B /* ContentView.swift */,
+				8A65038226BFC76D00059F9B /* SliderCustom.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8A65038C26BFC82800059F9B /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8A65037926BFC75E00059F9B /* Preview Content */,
+				8A65037C26BFC75E00059F9B /* Info.plist */,
+				8A65037726BFC75E00059F9B /* Assets.xcassets */,
+				8A65037326BFC75900059F9B /* SwiftUiHW4_2App.swift */,
+			);
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +162,7 @@
 			files = (
 				8A65038726BFC78500059F9B /* Coordinator.swift in Sources */,
 				8A65037426BFC75900059F9B /* SwiftUiHW4_2App.swift in Sources */,
-				8A65038526BFC77200059F9B /* ContentView.swift in Sources */,
+				8A65038D26BFC89800059F9B /* ContentView.swift in Sources */,
 				8A65038326BFC76D00059F9B /* SliderCustom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,10 +292,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUiHW4_2/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUiHW4_2/SupportFiles/Preview Content\"";
 				DEVELOPMENT_TEAM = 4A5GSXMSS8;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwiftUiHW4_2/Info.plist;
+				INFOPLIST_FILE = SwiftUiHW4_2/SupportFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,10 +314,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUiHW4_2/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUiHW4_2/SupportFiles/Preview Content\"";
 				DEVELOPMENT_TEAM = 4A5GSXMSS8;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwiftUiHW4_2/Info.plist;
+				INFOPLIST_FILE = SwiftUiHW4_2/SupportFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
